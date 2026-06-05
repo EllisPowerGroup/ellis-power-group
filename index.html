@@ -70,40 +70,86 @@
   <section id="news-section" class="section section-alt">
     <div class="container">
       <h2 class="section-title">News</h2>
-      <div class="card-grid card-grid-3">
+      <div class="carousel-wrapper">
+        <button class="carousel-btn carousel-prev" aria-label="Previous">&#8249;</button>
+        <div class="carousel-track-container">
+          <div class="carousel-track">
 
-        <!-- Image news block -->
-        <div class="card">
-          <img src="news_images/Joseph_Winkler_Visit.png" alt="Joseph_Winkler" class="news-img">
-          <div class="research-body">
-            <p style="font-size:0.8rem; color:var(--gray); margin-bottom:0.2rem;">[Month Year]</p>
-            <div class="research-title">[News headline]</div>
-            <p class="research-desc">[Full news content — this will appear in the modal when Read More is clicked.]</p>
-            <a href="#" class="btn btn-blue" onclick="openModal(this); return false;">Read More</a>
+            <!-- Image news block -->
+            <div class="card">
+              <img src="[image path]" alt="[News image]" class="research-img">
+              <div class="research-body">
+                <p style="font-size:0.8rem; color:var(--gray); margin-bottom:0.2rem;">[Month Year]</p>
+                <div class="research-title">[News headline]</div>
+                <p class="research-desc">[Full news content — this will appear in the modal when Read More is clicked.]</p>
+                <a href="#" class="btn btn-blue" onclick="openModal(this); return false;">Read More</a>
+              </div>
+            </div>
+
+            <!-- No image news block -->
+            <div class="card">
+              <div class="research-img placeholder"></div>
+              <div class="research-body">
+                <p style="font-size:0.8rem; color:var(--gray); margin-bottom:0.2rem;">[Month Year]</p>
+                <div class="research-title">[News headline]</div>
+                <p class="research-desc">[Full news content — this will appear in the modal when Read More is clicked.]</p>
+                <a href="#" class="btn btn-blue" onclick="openModal(this); return false;">Read More</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="research-img placeholder"></div>
+              <div class="research-body">
+                <p style="font-size:0.8rem; color:var(--gray); margin-bottom:0.2rem;">[Month Year]</p>
+                <div class="research-title">[News headline]</div>
+                <p class="research-desc">[Full news content — this will appear in the modal when Read More is clicked.]</p>
+                <a href="#" class="btn btn-blue" onclick="openModal(this); return false;">Read More</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="research-img placeholder"></div>
+              <div class="research-body">
+                <p style="font-size:0.8rem; color:var(--gray); margin-bottom:0.2rem;">[Month Year]</p>
+                <div class="research-title">[News headline]</div>
+                <p class="research-desc">[Full news content — this will appear in the modal when Read More is clicked.]</p>
+                <a href="#" class="btn btn-blue" onclick="openModal(this); return false;">Read More</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="research-img placeholder"></div>
+              <div class="research-body">
+                <p style="font-size:0.8rem; color:var(--gray); margin-bottom:0.2rem;">[Month Year]</p>
+                <div class="research-title">[News headline]</div>
+                <p class="research-desc">[Full news content — this will appear in the modal when Read More is clicked.]</p>
+                <a href="#" class="btn btn-blue" onclick="openModal(this); return false;">Read More</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="research-img placeholder"></div>
+              <div class="research-body">
+                <p style="font-size:0.8rem; color:var(--gray); margin-bottom:0.2rem;">[Month Year]</p>
+                <div class="research-title">[News headline]</div>
+                <p class="research-desc">[Full news content — this will appear in the modal when Read More is clicked.]</p>
+                <a href="#" class="btn btn-blue" onclick="openModal(this); return false;">Read More</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="news_images/Joseph_Winkler_Visit.png" alt="Joseph Winkler Visit" class="research-img">
+              <div class="research-body">
+                <p style="font-size:0.8rem; color:var(--gray); margin-bottom:0.2rem;">[Month Year]</p>
+                <div class="research-title">[News headline]</div>
+                <p class="research-desc">[Full news content — this will appear in the modal when Read More is clicked.]</p>
+                <a href="#" class="btn btn-blue" onclick="openModal(this); return false;">Read More</a>
+              </div>
+            </div>
+
           </div>
         </div>
-
-        <!-- No image news block -->
-        <div class="card">
-          <div class="research-img placeholder"></div>
-          <div class="research-body">
-            <p style="font-size:0.8rem; color:var(--gray); margin-bottom:0.2rem;">[Month Year]</p>
-            <div class="research-title">[News headline]</div>
-            <p class="research-desc">[Full news content — this will appear in the modal when Read More is clicked.]</p>
-            <a href="#" class="btn btn-blue" onclick="openModal(this); return false;">Read More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="research-img placeholder"></div>
-          <div class="research-body">
-            <p style="font-size:0.8rem; color:var(--gray); margin-bottom:0.2rem;">[Month Year]</p>
-            <div class="research-title">[News headline]</div>
-            <p class="research-desc">[Full news content — this will appear in the modal when Read More is clicked.]</p>
-            <a href="#" class="btn btn-blue" onclick="openModal(this); return false;">Read More</a>
-          </div>
-        </div>
-
+        <button class="carousel-btn carousel-next" aria-label="Next">&#8250;</button>
       </div>
     </div>
   </section>
@@ -280,6 +326,56 @@
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape') closeModal();
     });
+
+    // ── News Carousel ──
+    (function () {
+      const track = document.querySelector('.carousel-track');
+      const prev  = document.querySelector('.carousel-prev');
+      const next  = document.querySelector('.carousel-next');
+      const wrapper = document.querySelector('.carousel-wrapper');
+      if (!track) return;
+
+      let index = 0;
+      const GAP = 24;
+
+      function visibleCount() {
+        return window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+      }
+      function cardCount() { return track.children.length; }
+      function maxIndex()  { return Math.max(0, cardCount() - visibleCount()); }
+      function cardWidth() {
+        const c = track.querySelector('.card');
+        return c ? c.offsetWidth + GAP : 0;
+      }
+
+      function update() {
+        track.style.transform = `translateX(-${index * cardWidth()}px)`;
+        prev.disabled = index === 0;
+        next.disabled = index >= maxIndex();
+      }
+
+      prev.addEventListener('click', () => { if (index > 0) { index--; update(); } });
+      next.addEventListener('click', () => {
+        index = index >= maxIndex() ? 0 : index + 1;
+        update();
+      });
+
+      let timer = setInterval(() => {
+        index = index >= maxIndex() ? 0 : index + 1;
+        update();
+      }, 5000);
+
+      wrapper.addEventListener('mouseenter', () => clearInterval(timer));
+      wrapper.addEventListener('mouseleave', () => {
+        timer = setInterval(() => {
+          index = index >= maxIndex() ? 0 : index + 1;
+          update();
+        }, 5000);
+      });
+
+      window.addEventListener('resize', update);
+      update();
+    })();
   </script>
 </body>
 </html>
