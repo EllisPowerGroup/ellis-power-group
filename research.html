@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research — Ellis Power Group | UC Santa Cruz</title>
+  <title>Research â€” Ellis Power Group | UC Santa Cruz</title>
   <link rel="icon" href="images/EPG_simple_blue.png" type="image/png">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- ── Navbar ── -->
+  <!-- â”€â”€ Navbar â”€â”€ -->
   <nav>
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">
@@ -31,38 +31,76 @@
     </div>
   </nav>
 
-  <!-- ── Page header ── -->
+  <!-- â”€â”€ Page header â”€â”€ -->
   <header class="hero" style="padding: 3rem 1.5rem 2.5rem;">
-    <h1 style="font-size:2rem;">Research & Converters</h1>
+    <h1 style="font-size:2rem;">Research & Hardware Gallery</h1>
     <p class="subtitle" style="margin-bottom:0;">
-      Our power converter projects — with images and links to published papers.
+      Our power converter projects â€” with images and links to published papers.
     </p>
   </header>
 
-  <!-- ── Research intro ── -->
+  <!-- â”€â”€ Research intro â”€â”€ -->
   <section class="section">
     <div class="container">
+      <p class="section-lead" style="margin-top:0; margin-bottom:1rem;">
+        <a href="#publications" style="color:var(--blue); text-decoration:none; font-weight:600;">See the full publication list &ndash; jump to All Publications</a>
+      </p>
       <h2 class="section-title">Our Projects</h2>
       <p class="section-lead">
         [Placeholder: One or two sentences summarizing the lab's research themes —
         e.g., high-frequency DC-DC converters, multilevel inverters, wireless power transfer,
         wide-bandgap device characterization, etc.]
       </p>
+      <div class="card-grid card-grid-2">        <div class="card">
+          <img src="images/HV_Dickson.png" alt="High-voltage Dickson converter" class="research-img">
+          <div class="research-body">
+            <div class="research-title">A High Step-Down Hybrid Switched-Capacitor DC-DC Converter for High Voltage Space Applications</div>
+            <p class="research-desc">This work presents a lightweight hybrid switched-capacitor (HSC) DC–DC converter for future space power systems, addressing the mass, efficiency, and environmental constraints of next-generation space applications.</p>
+            <a href="#" class="btn btn-outline">In Progress</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="news_images/deterministic_settling.png" alt="Deterministic settling project" class="research-img">
+          <div class="research-body">
+            <div class="research-title">Automatic Balancing of Flying Capacitor Voltages through Deterministic Switching States</div>
+            <p class="research-desc">This work investigates hybrid-switched-capacitor power converter architectures capable of imposing deterministic flying capacitor voltage biases without incurring additional loss in periodic steady-state, under both loaded and unloaded conditions.</p>
+            <a href="#" class="btn btn-outline">In Progress</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/High-Density-Radiation-Hardened-PoL-Converter.jpg" alt="High-Density Radiation-Hardened Point-of-Load Power Conversion Using Hybrid-Switched-Capacitor Circuit Topologies" class="research-img">
+          <div class="research-body">
+            <div class="research-title">High-Density Radiation-Hardened Point-of-Load (PoL) Power Conversion Using Hybrid-Switched-Capacitor Circuit Topologies</div>
+            <p class="research-desc">This work reviews recent advances in hybrid switched-capacitor (HSC) ladder converters and their potential for radiation-hardened point-of-load power conversion, including direct 48V-to-1V conversion. A representative hardware prototype highlights the technology's readiness for aerospace applications.</p>
+            <a href="mailto:nellis1@ucsc.edu" class="btn btn-blue">Contact for Access</a>
+            <img src="images/infineon_logo.png" alt="Infineon logo" class="infineon-badge">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Past Projects</h2>
+      <p class="section-lead">
+        The projects below were completed with Prof. Ellis as first author at institutions prior to joining UC Santa Cruz, including UC Berkeley's Berkeley Power and Energy Center and UC Davis.
+      </p>
 
       <div class="card-grid card-grid-2">
-
         <div class="card">
           <img src="images/Gallium-Nitride-Based-48V-to-1V-Point-of-Load-Converter.jpg" alt="Gallium Nitride-Based 48 V-to-1 V Point-of-Load Converter" class="research-img">
           <div class="research-body">
             <div class="research-title">A Gallium Nitride-based 48V-to-1V Point-of-Load (PoL) Converter
 for Aerospace Telecommunications and Computing Applications</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter's topology, specifications,
+              [Placeholder: 2â€“3 sentences describing this converter's topology, specifications,
               key technical contributions, and application domain (e.g., EV charging, grid storage,
               data center power supply, etc.).]
             </p>
               <a href="https://escholarship.org/content/qt4n53f2n9/qt4n53f2n9_noSplash_2fd4d69016fac9a799a35bc538a56f6e.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
-</div>
+              <img src="images/BPEC_logo.png" alt="BPEC logo" class="bpec-badge">
+          </div>
         </div>
 
         <div class="card">
@@ -70,11 +108,12 @@ for Aerospace Telecommunications and Computing Applications</div>
           <div class="research-body">
             <div class="research-title">A General Analysis of Resonant Switched-Capacitor Converters Using Peak Energy Storage and Switch Stress Including Ripple</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt8pf9g7jr/qt8pf9g7jr.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
-</div>
+              <img src="images/BPEC_logo.png" alt="BPEC logo" class="bpec-badge">
+          </div>
         </div>
 
         <div class="card">
@@ -82,11 +121,12 @@ for Aerospace Telecommunications and Computing Applications</div>
           <div class="research-body">
             <div class="research-title">The Symmetric Dual Inductor Hybrid Converter for Direct 48V-to-PoL Conversion</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt4pk605m7/qt4pk605m7.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
-</div>
+              <img src="images/BPEC_logo.png" alt="BPEC logo" class="bpec-badge">
+          </div>
         </div>
 
         <div class="card">
@@ -94,35 +134,27 @@ for Aerospace Telecommunications and Computing Applications</div>
           <div class="research-body">
             <div class="research-title">Large Signal Analysis on Variations of the Hybridized Dickson Switched-Capacitor Converter</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt6j78g03d/qt6j78g03d_noSplash_377736fbdd540aab79eec28ed66d741d.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
+              <img src="images/ucdavis_logo.png" alt="UC Davis logo" class="bpec-badge">
           </div>
         </div>
 
-        <div class="card">
-          <img src="images/High-Density-Radiation-Hardened-PoL-Converter.jpg" alt="High-Density Radiation-Hardened Point-of-Load Power Conversion Using Hybrid-Switched-Capacitor Circuit Topologies" class="research-img">
-          <div class="research-body">
-            <div class="research-title">High-Density Radiation-Hardened Point-of-Load (PoL) Power Conversion Using Hybrid-Switched-Capacitor Circuit Topologies</div>
-            <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
-              and key novelty.]
-            </p>
-            <a href="mailto:nellis1@ucsc.edu" class="btn btn-blue">Contact for Access</a>
-          </div>
-        </div>
+
 
         <div class="card">
           <img src="images/SDIH-Closed-Loop-Split-Phase-Control.jpg" alt="Closed-Loop Split-Phase Control Applied to the Symmetric Dual Inductor Hybrid (SDIH) Converter" class="research-img">
           <div class="research-body">
             <div class="research-title">Closed-Loop Split-Phase Control Applied to the Symmetric Dual Inductor Hybrid (SDIH) Converter</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt1r67g8g5/qt1r67g8g5.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
-</div>
+              <img src="images/BPEC_logo.png" alt="BPEC logo" class="bpec-badge">
+          </div>
         </div>
 
         <div class="card">
@@ -130,11 +162,12 @@ for Aerospace Telecommunications and Computing Applications</div>
           <div class="research-body">
             <div class="research-title">An Actively Balanced Distributed Regenerative Snubber with Reduced Part Count in Multi-Level Power Converters</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt9zm5h2h8/qt9zm5h2h8_noSplash_9cb658e4a061164dad25c1e3016e61a8.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
-</div>
+              <img src="images/BPEC_logo.png" alt="BPEC logo" class="bpec-badge">
+          </div>
         </div>
 
         <div class="card">
@@ -142,11 +175,12 @@ for Aerospace Telecommunications and Computing Applications</div>
           <div class="research-body">
             <div class="research-title">Modified Split-Phase Switching with Improved Fly Capacitor Utilization in a 48V-to-POL Dual Inductor Hybrid-Dickson Converter</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt71r9x8q9/qt71r9x8q9.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
-</div>
+              <img src="images/BPEC_logo.png" alt="BPEC logo" class="bpec-badge">
+          </div>
         </div>
 
         <div class="card">
@@ -154,10 +188,11 @@ for Aerospace Telecommunications and Computing Applications</div>
           <div class="research-body">
             <div class="research-title">A Synchronous Boot-strapping Technique with Increased On-time and Improved Efficiency for High-Side Gate-drive Power Delivery</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt6k84r84h/qt6k84r84h.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
+                        <img src="images/BPEC_logo.png" alt="BPEC logo" class="bpec-badge">
           </div>
         </div>
 
@@ -166,10 +201,11 @@ for Aerospace Telecommunications and Computing Applications</div>
           <div class="research-body">
             <div class="research-title">A Resonant Dual Extended LC-tank Dickson Converter with 50% Two-Phase Operation at Odd Conversion Ratios</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt1m93m42k/qt1m93m42k.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
+              <img src="images/ucdavis_logo.png" alt="UC Davis logo" class="bpec-badge">
           </div>
         </div>
 
@@ -178,10 +214,11 @@ for Aerospace Telecommunications and Computing Applications</div>
           <div class="research-body">
             <div class="research-title">Reducing C<sub>OSS</sub> Switching Loss in a GaN-based Resonant Cockcroft-Walton Converter Using Resonant Charge Redistribution</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt7j81f1t9/qt7j81f1t9_noSplash_d5e0a920fb03683ba1cdb35f70d436e8.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
+              <img src="images/ucdavis_logo.png" alt="UC Davis logo" class="bpec-badge">
           </div>
         </div>
 
@@ -190,10 +227,11 @@ for Aerospace Telecommunications and Computing Applications</div>
           <div class="research-body">
             <div class="research-title">A Resonant Gate Driver with Variable Gain and a Capacitively Decoupled High-Side GaN-FET</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt53c2j26t/qt53c2j26t_noSplash_a5bf99cc5776b317768e3cf818ffb62f.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
+              <img src="images/ucdavis_logo.png" alt="UC Davis logo" class="bpec-badge">
           </div>
         </div>
 
@@ -202,22 +240,24 @@ for Aerospace Telecommunications and Computing Applications</div>
           <div class="research-body">
             <div class="research-title">A Resonant 1:5 Cockcroft-Walton Converter Utilizing GaN FET Switches with N-Phase and Split-Phase Clocking</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
               <a href="https://escholarship.org/content/qt72z9t8m5/qt72z9t8m5_noSplash_6dd5c7a75843b3438fabdf5ad0d0541e.pdf" target="_blank" class="btn btn-blue">Read Paper</a>
+              <img src="images/ucdavis_logo.png" alt="UC Davis logo" class="bpec-badge">
           </div>
         </div>
 
         <div class="card">
           <img src="images/Resonant-Cockcroft-Walton-Switched-Capacitor-Converter.jpg" alt="A Resonant Cockcroft-Walton Switched-Capacitor Converter Achieving Full ZCS and >10kW/inch3 Power Density" class="research-img">
           <div class="research-body">
-            <div class="research-title">A Resonant Cockcroft-Walton Switched-Capacitor Converter Achieving Full ZCS and &gt;10kW/inch³ Power Density</div>
+            <div class="research-title">A Resonant Cockcroft-Walton Switched-Capacitor Converter Achieving Full ZCS and &gt;10kW/inchÂ³ Power Density</div>
             <p class="research-desc">
-              [Placeholder: 2–3 sentences describing this converter — topology, performance,
+              [Placeholder: 2â€“3 sentences describing this converter â€” topology, performance,
               and key novelty.]
             </p>
             <a href="https://ieeexplore.ieee.org/document/8913013" target="_blank" class="btn btn-blue">Read Paper</a>
+            <img src="images/ucdavis_logo.png" alt="UC Davis logo" class="bpec-badge">
           </div>
         </div>
 
@@ -225,8 +265,8 @@ for Aerospace Telecommunications and Computing Applications</div>
     </div>
   </section>
 
-  <!-- ── Publications list ── -->
-  <section class="section section-alt">
+  <!-- â”€â”€ Publications list â”€â”€ -->
+  <section id="publications" class="section section-alt">
     <div class="container">
       <h2 class="section-title">All Publications</h2>
       <p class="section-lead">Full list of journal and conference papers from the Ellis Power Group.</p>
@@ -237,10 +277,10 @@ for Aerospace Telecommunications and Computing Applications</div>
           [Placeholder: Paper Title]
         </p>
         <p style="font-size:0.85rem; color:var(--gray); margin-bottom:0.4rem;">
-          [Author 1, Author 2, et al.] · <em>[Journal / Conference Name]</em> · [Year]
+          [Author 1, Author 2, et al.] Â· <em>[Journal / Conference Name]</em> Â· [Year]
         </p>
         <a href="[DOI or paper URL]" target="_blank" style="font-size:0.83rem; color:var(--blue); text-decoration:none; font-weight:600;">
-          View Paper →
+          View Paper â†’
         </a>
       </div>
 
@@ -249,10 +289,10 @@ for Aerospace Telecommunications and Computing Applications</div>
           [Placeholder: Paper Title]
         </p>
         <p style="font-size:0.85rem; color:var(--gray); margin-bottom:0.4rem;">
-          [Author 1, Author 2, et al.] · <em>[Journal / Conference Name]</em> · [Year]
+          [Author 1, Author 2, et al.] Â· <em>[Journal / Conference Name]</em> Â· [Year]
         </p>
         <a href="[DOI or paper URL]" target="_blank" style="font-size:0.83rem; color:var(--blue); text-decoration:none; font-weight:600;">
-          View Paper →
+          View Paper â†’
         </a>
       </div>
 
@@ -261,18 +301,20 @@ for Aerospace Telecommunications and Computing Applications</div>
     </div>
   </section>
 
-  <!-- ── Footer ── -->
+  <!-- â”€â”€ Footer â”€â”€ -->
   <footer>
     <div class="footer-inner">
       <img src="images/EPG_simple_transparent_white.png" alt="Ellis Power Group logo" class="footer-logo">
-      <p class="footer-top">Ellis Power Group — Power Electronics Group</p>
-      <p>Department of Electrical and Computer Engineering · <a href="https://www.ucsc.edu" target="_blank">UC Santa Cruz</a></p>
+      <p class="footer-top">Ellis Power Group â€” Power Electronics Group</p>
+      <p>Department of Electrical and Computer Engineering Â· <a href="https://www.ucsc.edu" target="_blank">UC Santa Cruz</a></p>
       <p style="margin-top:0.5rem;">West Side Research Park, 2300 Delaware Ave, Santa Cruz, CA 95060</p>
     </div>
   </footer>
 
 </body>
 </html>
+
+
 
 
 
