@@ -1,0 +1,1 @@
+Nicholas is working towards his B.S. in Computer Science. He is now working on a minimal breakout board for TI's C2000 microcontroller.

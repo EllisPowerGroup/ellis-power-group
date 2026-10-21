@@ -1,0 +1,1 @@
+Ali Azgomi is a fourth-year electrical engineering undergraduate student at the University of California, Santa Cruz. He recently joined Professor Nathan Ellis's power electronics research group, where he will be working on silicon capacitor equivalent series resistance (ESR) measurements using the ring-down Q method and building a line impedance stabilization network (LISN).
